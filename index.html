@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Daftar Agenda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-selection" id="profile-selection">
+        <h1>Aplikasi Daftar Agenda</h1>
+        <div>
+            <p>Silakan pilih profil atau buat baru untuk memulai</p>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <select id="profile-list" style="width: 60%; padding: 10px; font-size: 1em; margin-bottom: 20px;"></select>
+            <div style="display: flex; gap: 10px;">
+                <button id="create-new-profile" class="buttoncreatenewprofil">Buat Profil Baru</button>
+                <button id="select-profile" class="buttonselectprofil">Pilih Profil</button>
+                <button id="delete-profile" class="buttondeleteprofil">Hapus Profil</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="app-page" style="display: none;">
+        <h1>Aplikasi Daftar Agenda</h1>
+
+        <div class="profile">
+            <p><strong>Nama:</strong> <span id="profile-name"></span></p>
+            <p><strong>Jabatan:</strong> <span id="profile-position"></span></p>
+        </div>
+
+        <div class="time" id="time-display"></div>
+
+        <div class="form-group">
+            <label for="task">Agenda:</label>
+            <textarea id="task" placeholder="Ketik Agenda anda disini..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="priority">Level Prioritas Agenda:</label>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <button id="add-task">Tambah</button>
+        
+        <div class="to-do-list">
+            <h2>Daftar Agenda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hapus</th>
+                        <th>Agenda</th>
+                        <th>Prioritas</th>
+                        <th>Waktu</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="to-do-tasks">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="done-list">
+            <h2>Selesai</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hapus</th>
+                        <th>Agenda</th>
+                        <th>Prioritas</th>
+                        <th>Waktu</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="done-tasks">
+                </tbody>
+            </table>
+        </div>
+
+        <button id="delete-all" class="buttondeleteall">Hapus Semua</button>
+        <button id="logout" class="buttonlogout">Keluar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

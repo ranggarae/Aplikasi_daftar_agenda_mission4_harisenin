@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-selection{
+    text-align: center; 
+    margin-bottom: 20px;
+    margin-top: 200px;
+    font-size: 1.2em;
+    
+}
+
+h1, h2 {
+    text-align: center;
+}
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile p {
+    margin: 5px 0;
+}
+.time {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.buttoncreatenewprofil {
+    background-color: #28a745; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.buttonselectprofil {
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.buttondeleteprofil {
+    background-color: #dc3545; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.buttondeleteall {
+    background-color: #dc3545;
+    margin-top: 20px;
+}
+
+.buttonlogout {
+    background-color: #007bff; 
+    margin-top: 20px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00000049;
+}
+.to-do-list, .done-list {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #f8f9fa;
+}
+
+.priority-high {
+    background-color: #f8d7da;
+}
+.priority-medium {
+    background-color: #fff3cd;
+}
+.priority-low {
+    background-color: #d1ecf1;
+}
+.done-row {
+    background-color: #d4edda;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    textarea, select, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+}
+
+
